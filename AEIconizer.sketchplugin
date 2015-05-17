@@ -1,5 +1,5 @@
 // Sketch Plugin: AEIconizer (ctrl shift i)
-// Source: github.com/tadija/AEIconizer
+// Source: github.com/
 // Version: 1.0
 
 // iOS icon sizes
@@ -13,7 +13,7 @@ if (originalIcon = handleSelection()) {
     iconize(originalIcon);
     [[doc currentView] centerLayersInCanvas];
   } else {
-    [doc showMessage:"Oops, icon artboard must have same width and height"];
+    [doc showMessage:"亲,appicon画布的高宽必需一致哦～"];
   }
 }
 
@@ -24,7 +24,7 @@ function handleSelection() {
     if ([[[doc currentPage] artboards] count] == 1) {
       iconArtboard = [[[doc currentPage] artboards] firstObject];
     } else {
-      [doc showMessage:"Oops, you have to select something"];
+      [doc showMessage:"亲,至少选择一个东西吧"];
     }
   } else {
     var currentSelection = selection[0];
